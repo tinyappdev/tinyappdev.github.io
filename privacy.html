@@ -1,31 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Love Widget</title>
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --text-color: #3c4043;
+            --bg-color: #f8f9fa;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .lang-btn {
+            background: none;
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 5px 15px;
+            cursor: pointer;
+            border-radius: 20px;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        .lang-btn:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+        h1 { color: #202124; font-size: 28px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        h2 { color: #202124; font-size: 20px; margin-top: 30px; }
+        p, ul { margin-bottom: 15px; }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 12px;
+            color: #70757a;
+        }
+        /* 隐藏逻辑 */
+        [lang="zh"] { display: none; }
+    </style>
 </head>
-<body style="font-family: sans-serif; padding: 24px; max-width: 800px; margin: auto;">
-  <h1>Privacy Policy</h1>
+<body>
 
-  <p>
-    This app respects your privacy. We do not collect, store, or share any personal information
-    unless explicitly stated within the app.
-  </p>
+<div class="container">
+    <div class="lang-switch">
+        <button class="lang-btn" onclick="setLanguage('en')">English</button>
+        <button class="lang-btn" onclick="setLanguage('zh')">中文</button>
+    </div>
 
-  <p>
-    Advertising partners may collect anonymous data to provide relevant ads,
-    in accordance with their own privacy policies.
-  </p>
+    <div id="content-en" lang="en">
+        <h1>Privacy Policy</h1>
+        <p>This privacy policy applies to the <strong>Love Widget</strong> app (herein referred to as "Application") for mobile devices that was created by <strong>Xiuzhen</strong> as a Free service.</p>
+        
+        <h2>1. Information Collection and Use</h2>
+        <p>The Application does not collect any personal information. All data processed by the Application is stored locally on your device and is not transmitted to our servers or any third parties.</p>
+        
+        <h2>2. Third-Party Services</h2>
+        <p>The Application may use third-party services that may collect information used to identify you. Link to the privacy policy of third-party service providers used by the Application:</p>
+        <ul>
+            <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li>
+            <li><a href="https://support.google.com/admob/answer/6128543" target="_blank">AdMob</a></li>
+        </ul>
 
-  <p>
-    If you have any questions about this Privacy Policy, please contact us at:
-    <br>
-    <a href="mailto:support@example.com">couplewidget@outlook.com</a>
-  </p>
+        <h2>3. Cookies</h2>
+        <p>Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. The Application does not use these “cookies” explicitly.</p>
 
-  <p>
-    This policy may be updated from time to time.
-  </p>
+        <h2>4. Security</h2>
+        <p>We value your trust in providing us your personal information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable.</p>
+
+        <h2>5. Children’s Privacy</h2>
+        <p>These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13.</p>
+
+        <h2>6. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes.</p>
+
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at: <strong>couplewidget@outlook.com</strong></p>
+    </div>
+
+    <div id="content-zh" lang="zh">
+        <h1>隐私政策</h1>
+        <p>本隐私政策适用于由 <strong>Xiuzhen</strong> 开发的移动应用程序 <strong>恋爱日常</strong>（以下简称“本应用”）。</p>
+        
+        <h2>1. 信息收集与使用</h2>
+        <p>本应用不收集任何个人信息。本应用处理的所有数据均存储在您的本地设备上，不会传输到我们的服务器或任何第三方。</p>
+        
+        <h2>2. 第三方服务</h2>
+        <p>本应用可能会使用可能收集用于识别您身份的信息的第三方服务。本应用使用的第三方服务提供商的隐私政策链接：</p>
+        <ul>
+            <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play 服务</a></li>
+            <li><a href="https://support.google.com/admob/answer/6128543" target="_blank">AdMob</a></li>
+        </ul>
+
+        <h2>3. Cookie</h2>
+        <p>Cookie 是包含少量数据的文件，通常用作匿名唯一标识符。本应用不会显式使用这些“Cookie”。</p>
+
+        <h2>4. 安全</h2>
+        <p>我们非常重视您对我们的信任，因此我们正努力使用商业上可接受的手段来保护您的信息。但请记住，互联网传输方式或电子存储方式都不是 100% 安全可靠的。</p>
+
+        <h2>5. 儿童隐私</h2>
+        <p>这些服务不针对 13 岁以下的任何人。我们不会故意收集 13 岁以下儿童的个人身份信息。</p>
+
+        <h2>6. 本隐私政策的修订</h2>
+        <p>我们可能会不时更新隐私政策。因此，建议您定期查看此页面以了解任何更改。</p>
+
+        <h2>7. 联系我们</h2>
+        <p>如果您对我们的隐私政策有任何疑问或建议，请随时联系我们：<strong>couplewidget@outlook.com</strong></p>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 [Your Name/Company]. All rights reserved.
+    </div>
+</div>
+
+<script>
+    function setLanguage(lang) {
+        const enContent = document.getElementById('content-en');
+        const zhContent = document.getElementById('content-zh');
+        
+        if (lang === 'zh') {
+            enContent.style.display = 'none';
+            zhContent.style.display = 'block';
+            document.title = "隐私政策 - 恋爱日常";
+        } else {
+            enContent.style.display = 'block';
+            zhContent.style.display = 'none';
+            document.title = "Privacy Policy - Love Widget";
+        }
+    }
+</script>
+
 </body>
 </html>
